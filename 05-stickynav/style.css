@@ -31,3 +31,7 @@ nav ul a {
 } */
 
 
+nav a.active {
+    background-color: lightcoral;
+    color: white;
+}
