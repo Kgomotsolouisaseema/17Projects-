@@ -37,8 +37,10 @@ const testimonials =[
 //get the container element by its ID
 const constainerElement = document.getElementById('testimonials');
 
-//FUNCTION TO CREATE 
+//Function to create HTML markup for a testimonial card 
 const makeTestimonialCard= testimonial =>{
+    //retrun a string containing HTML markup with testimonials details 
+    //string literal , so your adding the markup as the code excutes
     return `<div class="testimonial-card">
     <img src='${testimonial.author.image}'>
     <h2>${testimonial.author.name}</h2>
@@ -47,34 +49,47 @@ const makeTestimonialCard= testimonial =>{
     </div> `
 };
 
+//Variable to keep track of the  current testimonials index
 let currentTestimonial = 0;
 
 
-
+//function to display the next testimonial
 const nextTestimonial = () =>{
+    //check if there are more testimonials to display 
     if(currentTestimonial < testimonials.length -1){
+        //Increment the current testimonails index
         currentTestimonial += 1;
+        //update the page with the new testimonial
         updatePage();
-    }
-   
-}
+   }   
+};
+
+//Functio to display the previous testimonial
 const prevTestimonial = () =>{
+    //check if there are previous testimonials to display 
     if(currentTestimonial > 0){
+        //Decrement the current testimonial index 
         currentTestimonial -= 1;
+        //update the page with the new testimonial
         updatePage();
-    }
+    };
    
 }
 
+//Function to update the page with the current testimonial
 const updatePage = () =>{
+    //generate HTML markup for the current testimonial
     let markup = makeTestimonialCard(testimonials[currentTestimonial]);
+    //if there are multiplt testimonials, add navigation buttons 
     if(testimonials.length > 1){
         markup += `<nav>
         <button onclick="prevTestimonial()">Previous</button>
         <button onclick="nextTestimonial()">Next</button>
-        
         </nav>`
     }
+    //update the container elements HTML content with the new markup
     constainerElement.innerHTML =markup;
-}
+};
+
+//initially update the page with the first testimonial
 updatePage();
