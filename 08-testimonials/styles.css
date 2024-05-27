@@ -1,0 +1,64 @@
+/*rem  stand for "root em */
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#testimonials{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.testimonial-card{
+    /* background-color: aqua; */
+    padding: 1rem;
+    box-shadow: 0 0 16px 8px rgba( 0,0,0,  0.3);
+    width: 100%;
+    border-radius: .5rem;
+    line-height: 1.4;
+}
+
+.testimonial-card img{
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.testimonial-card h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.testimonial-card date{
+    text-align: right;
+    display: block;
+    font-style: italic;
+
+}
+
+nav button{
+    cursor: pointer;
+    width: 6rem;
+    background-color: steelblue;
+    color: white;
+    border:0;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    
+}
+
+nav button:hover{
+    background-color: blueviolet;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 1rem;
+}
