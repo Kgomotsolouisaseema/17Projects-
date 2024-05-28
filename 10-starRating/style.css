@@ -1,0 +1,9 @@
+#ratings{
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem ;
+    border: 2px solid black;
+    padding: 1rem;
+    width: 100px;
+}
+
