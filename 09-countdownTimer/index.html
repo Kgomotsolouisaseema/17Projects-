@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>09 Countdown Timer</title>
+    <link  rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>CountDown Timer</h1>
@@ -12,19 +14,19 @@
             <label for="hoursInput">Hours : </label>
             <input type="text" id="hoursInput" min="0" value="0">
 
-            <label for="minutesInput">Hours : </label>
+            <label for="minutesInput">Minutes : </label>
             <input type="text" id="minutesInput" min="0" value="0">
 
-            <label for="secondsInput">Hours : </label>
+            <label for="secondsInput">Seconds : </label>
             <input type="text" id="secondsInput" min="0" value="0">
 
             <button id="startTimer">Start </button>
         </div>
         <div class="timer">
             <h2>
-                <div id="hoursInput"></div>
-                <div id="minutesInput"></div>
-                <div id="secondsInput"></div>
+                <div id="hoursOutput"></div>
+                <div id="minutesOutput"></div>
+                <div id="secondsOutput"></div>
 
 
             </h2>
