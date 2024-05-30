@@ -1,0 +1,37 @@
+main{
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+}
+
+nav{
+    position: relative;
+
+}
+
+nav ul{
+    width: 6rem;
+    list-style-type: none;
+}
+
+nav ul li{
+    padding: .5rem;
+
+}
+
+nav ul a {
+    padding: .5rem;
+    text-decoration: none;
+}
+
+/* nav element outside of the main section will make the navigation sticky but in the main it will take the stlyes of the flex
+/* nav.sticky {
+    position: sticky;
+    inset: 0;
+} */
+
+
+nav a.active {
+    background-color: lightcoral;
+    color: white;
+}

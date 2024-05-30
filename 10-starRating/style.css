@@ -1,0 +1,35 @@
+#ratings{
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem ;
+    border: 2px solid black;
+    padding: 1rem;
+    width: 200px;
+}
+
+/*  ☆★ */
+
+
+.rating-label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.star{
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 0.1rem;
+}
+
+.star:before{
+    content: '☆';
+    color: black;
+    cursor: pointer;
+}
+
+.star.filled::before{
+    content: '★';
+    /* color: black; */
+}
+
