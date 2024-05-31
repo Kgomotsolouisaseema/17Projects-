@@ -1,0 +1,15 @@
+#race {
+    display: flex;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#race div{
+    text-align: center;
+}
+
+#race img{
+    width: 200px;
+    display: block;
+}
