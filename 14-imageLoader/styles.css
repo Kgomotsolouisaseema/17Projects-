@@ -1,0 +1,13 @@
+.styled-image {
+    width: 1800px;
+    height: auto;
+    max-width: 100%;
+    image-rendering: crisp-edges;
+}
+
+#imageGoesHere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
