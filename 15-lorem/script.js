@@ -12,8 +12,27 @@ const getLoremIpsum = (numberOfParagraphs) => {
     });
 };
 
-//The updateResult function takes an array of text paragraphs as input.
+const addCopyBtn = text => {
+  const resultElement = document.getElementById('result');
+  const copyBtn  = document.createElement('button');
 
+  copyBtn.textContent = ('Copy');
+  copyBtn.classList.add('copy');
+
+  copyBtn.onclick = () =>{
+    navigator.clipboard.writeText(text);
+    copyBtn.textContent = 'Copied !' ; 
+    setTimeout(()=> {
+      copyBtn.textContent = 'Copy';
+    } ,  2000)
+  }
+
+  resultElement.appendChild(copyBtn);
+}
+
+
+
+//The updateResult function takes an array of text paragraphs as input.
 const updateResult = textArray => {
   //It gets the HTML element with the id "result" and adds the "show" class to it.
   const resultElement = document.getElementById("result");
@@ -24,7 +43,7 @@ const updateResult = textArray => {
     .map((paragraph) => `<p>${paragraph}</p>`)
     .join("");
 
- 
+    addCopyBtn(textArray.join(''));
 };
 
 
@@ -38,5 +57,9 @@ getloremIpsumBtnElement.addEventListener("click", () => {
   getLoremIpsum(parseInt(paragraphsCountElement.value));
   paragraphsCountElement.value = "";
 });
+
+
+
+
  
 
