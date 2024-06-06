@@ -118,7 +118,7 @@ const userDirectory = new UserDirectory({
       {firstName , lastName , birthDate , image ,phone ,email}
     )=> {
       const userObj ={
-        name: `${firstName} ${lastName}`,  
+        name: `${firstName} ${lastName}`,   
         birthDate,
         phone, 
         email,
