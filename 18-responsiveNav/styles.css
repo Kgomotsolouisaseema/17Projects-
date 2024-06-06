@@ -6,7 +6,7 @@
 body{
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* cursor: default; */
+    cursor: default;
 }
 
 section#hero{
@@ -115,12 +115,19 @@ section#description p{
     .navbar.open{
         display: block;
     }
+    .navbar.open .navbar-links{
+        display: flex;
+    }
 
     .navbar-links ul{
         width: 100%;
         flex-direction: column;
         padding: 1rem;
         background-color: rgba(0,0,0,0.8);
+    }
+
+    .navbar-links.open{
+        display: flex;
     }
 }
 
